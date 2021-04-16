@@ -49,5 +49,42 @@ void Show(const box & a)
 ```
 
 5.答案：
-函数原型修改为｀void fill(std::array<double,Seasons> & pa); ｀｀void show(std::array<double,Seasons> & da);｀
+函数原型修改为void fill(std::array<double,Seasons> & pa); void show(std::array<double,Seasons> & da);
+主函数修改部分：fill(expenses);
+函数定义个性部分：
+```
+void fill(std::array<double,Seasons> & pa)
+{
+    using namespace std;
+    for (size_t i = 0; i < Seasons; i++)
+    {
+        cout << "Enter " << Snames[i] << "expenses: ";
+        cin >> pa[i];
+    }
+}
 
+void show(std::array<double, Seasons> & da)
+{
+    using namespace std;
+    double total = 0.0;
+    cout << "\nEXPENSES\n";
+    for (size_t i = 0; i < Seasons; i++)
+    {
+        cout << Snames[i] << ": $" << da[i] << endl;
+        total += da[i];
+    }
+    cout << "Total Expense: " << total << endl; 
+}
+ ```
+ 6.a答案：可以用函数默认参数完成，double mass(density,volume);double mass(density,volume=1);
+   b答案：只能用函数重载完成，void repeat(string);
+   c答案：只能用函数重载完成，int(int , int);average(double , double);
+   d答案：两种都不行。
+   
+ 7.
+ abc
+ def
+ 
+ gg
+ <br>
+ o
