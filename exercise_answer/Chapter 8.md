@@ -25,5 +25,29 @@ void iquote(string a) //#3 type string parameter
 {
   cout<<"\""<<a<<"\""<<endl;
 }
-
 ```
+
+4.a答案：
+```
+void Show(const box & a)
+{
+   using namespace std;
+   cout << a.maker << endl;
+   cout << a.height << endl;
+   cout << a.width << endl;
+   cout << a.length << endl;
+   cout << a.volume << endl;
+}
+```
+b答案：
+```
+void Show(const box & a)
+{
+   using namespace std;
+   a.volume = a.height*a.width*a.length;
+}
+```
+
+5.答案：
+函数原型修改为｀void fill(std::array<double,Seasons> & pa); ｀void show(std::array<double,Seasons> & da);
+
