@@ -96,6 +96,6 @@ template <> box max(box b1, box b2)
     return b1.volume > b2.volume ? b1: b2; 
 }
 ```
-9.答案：
+9.答案：<br>
 v1 is type float <br> v2 is type float& <br> v3is type float$ (注意是两层括号) <br> v4 is type int  <br> v5 is type double （因为2.0是double，double与float的运算表达式是double)
 
