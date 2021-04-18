@@ -76,15 +76,26 @@ void show(std::array<double, Seasons> & da)
     cout << "Total Expense: " << total << endl; 
 }
  ```
- 6.a答案：可以用函数默认参数完成，double mass(density,volume);double mass(density,volume=1);
+6.a答案：可以用函数默认参数完成，double mass(density,volume);double mass(density,volume=1);
    b答案：只能用函数重载完成，void repeat(string);
    c答案：只能用函数重载完成，int(int , int);average(double , double);
    d答案：两种都不行。
    
- 7.
- abc
- def
- 
- gg
- <br>
- o
+7.答案：
+ ```
+template<typename T>
+T bigger(T a, T b)
+{
+    return a > b ? a : b; 
+}
+```
+8.答案：
+```
+template <> box max(box b1, box b2)
+{
+    return b1.volume > b2.volume ? b1: b2; 
+}
+```
+9.答案：
+v1 is type float <br> v2 is type float& <br> v3is type float$ (注意是两层括号) <br> v4 is type int  <br> v5 is type double （因为2.0是double，double与float的运算表达式是double)
+
